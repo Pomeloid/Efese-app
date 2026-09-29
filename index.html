@@ -8,18 +8,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Firebase SDKs -->
     <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-        import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-        import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, updateDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+     <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-        // CONFIGURACIÓN DE FIREBASE (Asegúrate de que tus credenciales estén correctas aquí)
-        const firebaseConfig = {
-            apiKey: "TU_API_KEY",
-            authDomain: "TU_AUTH_DOMAIN",
-            projectId: "TU_PROJECT_ID",
-            storageBucket: "TU_STORAGE_BUCKET",
-            messagingSenderId: "TU_MESSAGING_SENDER_ID",
-            appId: "TU_APP_ID"
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC-EcOQr60TtBqk67osJhUj2kOitAe5PFc",
+    authDomain: "efese-app.firebaseapp.com",
+    projectId: "efese-app",
+    storageBucket: "efese-app.firebasestorage.app",
+    messagingSenderId: "917869580027",
+    appId: "1:917869580027:web:4d6e71f2efae1fc8336a5e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
         };
 
         const app = initializeApp(firebaseConfig);
